@@ -1,0 +1,209 @@
+body{
+    background-color: #074fb4;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09469b;
+    padding: 10px 0;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stContainer
+{
+    width: 5%;
+    position: absolute;
+    top: 15px; 
+    left: 20px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 100px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.justify{
+    display: flex;
+    flex-wrap: wrap; /* Permite que os produtos se ajustem em várias linhas */
+    justify-content: center;
+    align-items: flex-start; /* Alinha os itens ao topo */
+    padding: 20px; /* Adiciona padding para os produtos */
+ }
+ 
+ .align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #produto1, #produto2, #produto3 {
+    width: 25%; 
+    margin: 35px;
+    border: 2px solid #09469b;
+    border-radius: 20px;
+    background-color: #ffffff; 
+    padding: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+#produto1 h1, #produto2 h1, #produto3 h1 {
+    text-align: center;
+}
+
+
+.btn-editar {
+    background-color: #09469b;
+    color: #fff;
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%; /* Botão ocupa toda a largura */
+    transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+.btn-editar:hover {
+    color: #09469b;
+    background-color: #fff;
+    border-color: #09469b;
+    box-shadow: 0 8px 16px rgba(9, 70, 155, 0.5); 
+}
+
+ .title{
+     font-size: 130%;
+     color: #09469b;
+ }
+ .subtitle{
+     color: #000000;
+     margin-bottom: 1%;
+ }
+
+ h1{
+    color: #09469b;
+ }
+ 
+ p{
+     font-size: 120%;
+     color: #fff;
+ }
+ 
+ @media (max-width: 768px) {
+     .container {
+        display: flex; 
+        flex-direction: row;
+         padding-bottom: 20px;
+     }
+ 
+     nav ul {
+         text-align: center;
+     }
+ 
+     nav ul li {
+         display: block;
+         margin-left: 0;
+         margin-top: 10px;
+     }
+ 
+     .stContainer {
+         width: 10%;
+         position: relative;
+         margin-bottom: 10px;
+         top: auto;
+         left: auto;
+     }
+ 
+     #produto1, #produto2, #produto3 {
+         width: 90%;
+         margin-left: 5%;
+         margin-top: 5%;
+     }
+ 
+     .justify {
+         flex-direction: column; 
+         align-items: center;
+     }
+ }
+ 
+ 
+ @media (max-width: 480px) {
+     .btn-salvar {
+         width: 100%;
+         font-size: 16px;
+         padding: 8px 0;
+     }
+ 
+     #produto1, #produto2, #produto3 {
+         width: 100%;
+         margin-left: 0;
+         margin-top: 5%;
+     }
+ 
+     .stContainer {
+         width: 20%;
+         max-width: 80px;
+     }
+ 
+     nav ul li {
+         margin-left: 0;
+         margin-top: 5px;
+     }
+ 
+     .justify .justify {
+         flex-direction: column; 
+         align-items: center;
+     }
+ }
+
+ input{
+    background-color: #eee;
+    margin: 8px 0;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 85%;
+    outline: none;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+input:hover {
+    background-color: #e7e6e6;
+    border-color: #09469b;
+    cursor: pointer;
+}
+
+input:focus {
+    border-color: #09469b; 
+    background-color: #f0f0f0; 
+    box-shadow: 0 0 8px rgba(9, 70, 155, 0.5); 
+}

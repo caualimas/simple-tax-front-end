@@ -1,0 +1,229 @@
+
+*{
+    background-color: #09469b;
+}
+body {
+  
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: black;
+}
+
+.navbar{
+    background-color: #fff;
+    box-shadow: #fff;
+}
+
+.container{
+    background-color: #fff;
+    margin: white;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.stContainer
+{
+    height: 6vh;
+    width: 3vw;
+    margin-left: 15px;   
+}
+
+
+
+.container1 nav{
+    background-color: white;
+}
+
+.container1 ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.container1 ul li {
+    display: inline;
+    margin-left: 100px;
+    margin-top: 2%;
+}
+
+.container1 ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container1 ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+.container1 button{
+    background-color: white;
+    border-color: white;
+}
+
+.container1 svg{
+    background:transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.justify {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px; 
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#produto1, #produto2, #produto3 {
+    width: 20%; 
+    margin: 35px;
+    border: 2px solid #09469b;
+    border-radius: 20px;
+    background-color: #ffffff; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+#produto1 p,#produto2 p, #produto3 p{
+    color: black;
+    background-color: #fff;
+}
+
+#produto1 .subtitle,#produto2 .subtitle, #produto3 .subtitle{
+    color: #09469b;
+    background-color: #fff;
+}
+
+#produto1 h2,#produto2 h2, #produto3 h2{
+    color: black;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 140%;
+}
+
+#produto1 .align,#produto2 .align, #produto3 .align{
+    background-color: #fff;
+}
+
+#produto1 h1,#produto2 h1, #produto3 h1{
+    color: #09469b;
+    background-color: #fff;
+    font-size: 190%;
+}
+
+
+#produto1:hover, #produto2:hover, #produto3:hover {
+    transform: scale(1.05); 
+}
+
+.btn-salvar {
+    background-color: #09469b;
+    color: #fff;
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-salvar:hover {
+    color: #09469b;
+    background-color: #fff;
+    border-color: #09469b;
+    box-shadow: 0 8px 16px rgba(9, 70, 155, 0.5); 
+}
+
+.bi{
+    color: #f0f0f0;
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color: white
+}
+
+.offcanvas-header h5{
+    color: white
+}
+
+.title {
+    font-size: 130%;
+}
+
+.subtitle {
+    color: #09469b;
+    font-weight: bold;
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color: white
+}
+
+.offcanvas-header h5{
+    color: white
+}
+
+p {
+    font-size: 120%;
+    margin: 5px 0; 
+}
+
+
+@media (max-width: 768px) {
+    .stContainer {
+        width: 10%;
+        margin-bottom: 10px;
+    }
+
+    #produto1, #produto2, #produto3 {
+        width: 90%; 
+        margin: 10px auto; 
+    }
+
+    .justify {
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-salvar {
+        width: 100%;
+        font-size: 14px; 
+        padding: 8px 0; 
+    }
+
+    .stContainer {
+        width: 20%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

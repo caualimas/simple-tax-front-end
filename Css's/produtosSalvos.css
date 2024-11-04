@@ -1,0 +1,243 @@
+*{
+    background-color: #09469b;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.container1 nav{
+    background-color: white;
+}
+
+.align h1 {
+    margin-top: 2%;;
+    color: white;
+}
+
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+.container{
+    background-color: white; 
+}
+
+.container1 .btn {
+    margin-left: auto; 
+}
+
+p{
+    color: #ffffff;
+}
+
+.container1 button{
+    background-color: white;
+    border-color: white;
+}
+
+.container1 svg{
+    background:transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.container1 ul {
+    list-style-type: none;
+}
+
+.container1 ul li {
+    display: inline;
+    margin-left: 100px;
+}
+
+.container1 ul li a {
+    color: #ffffff;
+    text-decoration: none;;
+    font-size: 18px;
+}
+
+.container1 ul li a:hover {
+    text-decoration: underline;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-ex-btn{
+    background-color: #f0f0f0;
+    color: black;
+    font-size: 20px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 18vw;
+    text-decoration: none;
+}
+
+
+.add-ex-btn:hover {
+    color: white;
+    transform: scale(1.05); 
+    border-color: #f0f0f0;
+    background-color: #09469b;
+    box-shadow: 0 8px 16px rgba(9, 70, 155, 0.5);
+}
+
+.conjunto-btn{
+    background-color: white;
+    color: #09469b;
+    font-size: 20px;
+    padding: 15px 50px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 20%;
+    transition: all 0.4s ease;
+}
+
+#this-page{
+    font-size: 130%;
+}
+
+    .bi{
+        color: #f0f0f0;
+    }
+    
+    .offcanvas-body a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .offcanvas-header h5{
+        color: white
+    }
+
+    @media only screen and (max-width: 1024px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav ul li {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    
+        .stContainer {
+            width: 5%;
+        }
+    
+        .add-ex-btn {
+            width: 30vw;
+            font-size: 16px;
+        }
+    
+        .conjunto-btn{
+            width: 50%;
+            font-size: 16px;
+        }
+    
+        #this-page {
+            font-size: 1.2rem;
+        }
+        .align{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .add-ex-btn {
+            width: 30vw;
+            font-size: 14px;
+            padding: 10px;
+        }
+    
+        .conjunto-btn{
+            width: 50%;
+            font-size: 14px;
+            padding: 10px;
+        }
+    
+        #this-page {
+            font-size: 1.1rem;
+        }
+    
+        .stContainer {
+            width: 7%;
+        }
+        
+    }
+    
+    @media only screen and (max-width: 480px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+        }
+        .add-ex-btn{
+            width: 25vw;
+            font-size: 12px;
+            padding: 8px;
+        }
+        .conjunto-btn{
+            width: 50%;
+            font-size: 12px;
+            padding: 8px;
+        }
+        #this-page {
+            font-size: 1rem;
+        }
+    
+        .stContainer {
+            width: 10%;
+        }
+    
+        nav ul li a {
+            font-size: 16px;
+        }
+    
+        
+    }
