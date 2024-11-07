@@ -12,13 +12,13 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: lightgray;
     position: sticky;
     top: 0px;
 }
 
 .container1 nav{
-    background-color: white;
+    background-color: lightgray;
 }
 
 .align h1 {
@@ -26,19 +26,8 @@ body{
     color: white;
 }
 
-
-.container1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    position: sticky;
-    top: 0px;
-}
-
 .container{
-    background-color: white; 
+    background-color: lightgray; 
 }
 
 .container1 .btn {
@@ -50,8 +39,8 @@ p{
 }
 
 .container1 button{
-    background-color: white;
-    border-color: white;
+    background-color: #fff;
+    border-color: lightgray;
 }
 
 .container1 svg{
@@ -157,6 +146,7 @@ p{
     
         .stContainer {
             width: 5%;
+            
         }
     
         .add-ex-btn {

@@ -2,6 +2,106 @@
     background-color: #09469b;
 }
 
+body {
+    background-color: #c9d6ff;
+    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    
+}
+
+.container1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+
+
+.container{
+    background-color: white;
+}
+
+.container1 nav{
+    background-color: white;
+}
+
+.stContainer
+{
+    height: 6vh;
+    width: 3vw;
+    margin-left: 15px;   
+}
+
+.container1 ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.container1 ul li {
+    display: inline;
+    margin-left: 100px;
+    margin-top: 2%;
+}
+
+.container1 ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.container1 ul li a:hover {
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+#align-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container1 button{
+    background-color: white;
+    border-color: white;
+}
+
+.container1 svg{
+    background:transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.bi{
+    color: #f0f0f0;
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color: white
+}
+
+.offcanvas-header h5{
+    color: white
+}
+
+a{
+    width: 100%;
+}
+
+#formConjunto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+
+}
+
 #formProduto
 {
     display: flex;
@@ -12,15 +112,6 @@
     height: 100%;
 }
 
- input{
-    background-color: #eee;
-    margin: 8px 0;
-    padding: 10px 15px;
-    font-size: 20px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
-}
 
 .btn-salvar{
     background-color: white;
@@ -46,8 +137,20 @@ label{
 
 h1{
     font-size: 45px;
-    color: #fff;
+    color: #fff !important;
     text-align: center;
+}
+
+input {
+    background-color: #eee;
+    margin: 8px 0;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    width: 115% !important;
+    outline: none;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
 }
 
 input:hover {
@@ -66,39 +169,6 @@ input:hover {
     color: #0056b3; 
 }
 
-body {
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-    
-}
-
-
-#formProduto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-}
-
-
-input {
-    background-color: #eee;
-    margin: 8px 0;
-    padding: 15px 20px;
-    font-size: 18px;
-    border-radius: 8px;
-    width: 100%;
-    outline: none;
-    border: 2px solid transparent;
-    transition: all 0.4s ease;
-}
-
-input:hover {
-    background-color: #e7e6e6;
-    border-color: #09469b;
-    cursor: pointer;
-}
 
 input:focus {
     border-color: #09469b; 
@@ -107,15 +177,13 @@ input:focus {
 }
 
 .btn-salvar:hover {
-    color: #09469b;
-    background-color: #fff;
-    border-color: #09469b;
+    color: white;
+    transform: scale(1.05); 
+    border-color: #f0f0f0;
+    background-color: #09469b;
+    box-shadow: 0 8px 16px rgba(9, 70, 155, 0.5);
    
 }
-
-
-
-
 
 .back-arrow i {
     font-size: 30px;
