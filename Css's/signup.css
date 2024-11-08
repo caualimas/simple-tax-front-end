@@ -141,7 +141,7 @@ body{
 
 @media (max-width: 900px) {
     .container {
-        width: 80vw;
+        width: 40rem;
         height: auto;
         padding: 20px;
         flex-direction: column;
@@ -151,10 +151,12 @@ body{
         font-size: 24px;
     }
 
-    .container input, 
+    .container input {
+        width: 70%;
+    }
+
     .container button {
-        font-size: 12px;
-        padding: 8px 20px;
+        width: 85%;
     }
 
     #st-image {
@@ -172,29 +174,54 @@ body{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 740px) {
     .container {
-        width: 90vw;
+        width: 80vw;
         height: auto;
+        padding: 20px;
+        flex-direction: column;
     }
 
     .container h1 {
-        font-size: 20px;
     }
 
-    .container input, 
+    .container .form-container {
+        width: 60%;
+    }
+
+    .container input {
+        width: 90%;
+    }
+
     .container button {
-        font-size: 10px;
-        padding: 6px 15px;
+        width: 105%;
     }
 
     #st-image {
-        width: 30%;
+        display: none;
+    }
+
+    .container form{
+        width: 100%;
     }
 
     .social-icons a {
-        width: 25px;
-        height: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+    }
+
+    .container h1 {
+    }
+
+    .container input {
+        width: 100%;
+    }
+
+    .container button {
+        width: 115%;
     }
 }
 

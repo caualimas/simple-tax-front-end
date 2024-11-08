@@ -225,7 +225,7 @@ input:focus {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #09469b;
+    background-color: white;
     margin-bottom: 2%;
     position: sticky;
     top: 0px;

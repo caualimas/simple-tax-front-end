@@ -7,17 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conjunto de Taxas</title>
     <link rel="stylesheet" href="../Css's\formProduto.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
 
 </head>
-    <title>Cadastro de Produto</title>
-<body>
+    <title>Cadastro de Taxas</title>
+<body> 
+    <div class="container1">
+        
+        <nav class="navbar">
+            <div class="container">
+                <img src="../Imagens/ST-Branco.png" alt="Logo" width="50" height="44">
+            </div>
+          </nav>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#09469b" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <a href="perfil.html">Perfil</a><br><br>
+                <a href="calcular.html">Calcular</a><br><br>
+                <a href="produtosSalvos.html">Produtos</a><br><br>
+                <a href="singin.html">Sair</a>
+            </div>
+        </div>
+         
+    </div>
     <a href="calcular.html" class="back-arrow">
         <i class="fas fa-arrow-left"></i>
 </a>
 <div id="formConjunto">
     <form id="">
-        <h1>Conjunto de Taxas</h1>
+       <br> <h1>Conjunto de Taxas</h1><br>
     <label for="nomeDoConjunto">Nome do Conjunto:</label><br>
     <input type="text" name="nome" id="nome">
     <br><br>
@@ -44,5 +72,6 @@
    </form>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
