@@ -91,7 +91,7 @@ body {
 }
 
 #produto1, #produto2, #produto3 {
-    width: 20%; 
+    width: 28%; 
     margin: 35px;
     border: 2px solid #09469b;
     border-radius: 20px;
@@ -130,9 +130,7 @@ body {
 }
 
 
-#produto1:hover, #produto2:hover, #produto3:hover {
-    transform: scale(1.05); 
-}
+
 
 .btn-salvar {
     background-color: #09469b;

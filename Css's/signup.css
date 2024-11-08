@@ -24,7 +24,7 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 45vw;
+    width: 50rem;
     height: 67vh;
     max-width: 100%;
     min-height: 480px;
@@ -86,7 +86,7 @@ body{
     justify-content: center;
     flex-direction: column;
     margin-left: 3%;
-    width: 100%;
+    width: 90%;
 }
 
 .container input{
@@ -96,7 +96,7 @@ body{
     padding: 10px 8px;
     font-size: 14px;
     border-radius: 8px;
-    width: 100%;
+    width: 90%;
     outline: none;
 }
 
@@ -137,13 +137,14 @@ body{
 
 #formata-Entrar{
     margin-bottom: 5%;
-}
+}   
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .container {
-        width: 90vw;
+        width: 80vw;
         height: auto;
         padding: 20px;
+        flex-direction: column;
     }
 
     .container h1 {
@@ -157,9 +158,13 @@ body{
     }
 
     #st-image {
-        width: 80%;
+        width: 50%;
         margin-left: 0;
     }
+
+    .container form{
+        width: 50%
+}
 
     .social-icons a {
         width: 30px;
@@ -169,7 +174,7 @@ body{
 
 @media (max-width: 480px) {
     .container {
-        width: 100vw;
+        width: 90vw;
         height: auto;
     }
 
@@ -184,7 +189,7 @@ body{
     }
 
     #st-image {
-        width: 70%;
+        width: 30%;
     }
 
     .social-icons a {
@@ -192,3 +197,4 @@ body{
         height: 25px;
     }
 }
+
