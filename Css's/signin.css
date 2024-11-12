@@ -24,8 +24,9 @@ body{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 45%;
-    max-width: 1100px;
+    width: 50rem;
+    height: 67vh;
+    max-width: 100%;
     min-height: 480px;
 }
 
@@ -34,7 +35,6 @@ body{
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
-
 }
 
 .container span{
@@ -52,7 +52,7 @@ body{
     background-color: #09469b;
     color: #fff;
     font-size: 14px;
-    padding: 10px 45px;
+    padding: 10px 30px;
     border: 1px solid transparent;
     border-radius: 8px;
     font-weight: 600;
@@ -60,7 +60,22 @@ body{
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
-    width: 100%;
+    width: 105%;
+    margin-bottom: 10%;
+}
+
+#button {
+    background-color: #09469b;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 70px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 
@@ -70,20 +85,18 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 25%;
-    height: 100%;
-    width: 20%;
-   
+    margin-left: 3%;
+    width: 90%;
 }
 
 .container input{
     background-color: #eee;
     border: none;
     margin: 8px 0;
-    padding: 10px 12px;
-    font-size: 13px;
+    padding: 10px 8px;
+    font-size: 14px;
     border-radius: 8px;
-    width: 100%;
+    width: 90%;
     outline: none;
 }
 
@@ -93,12 +106,9 @@ body{
     position: absolute;
     top: 0;
     height: 100%;
-    padding: 10px;
     transition: all 0.6s ease-in-out;
-    margin-right: 20%;
-    width: 120%;
-    margin-left: 10%;
 }
+
 
 .social-icons{
     margin: 20px 0;
@@ -116,15 +126,90 @@ body{
 }
 
 #st-image{
-    width: 5%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     height: auto;
+    margin-left: 10%;
 }
 
+#formata-Entrar{
+    margin-bottom: 5%;
+}   
 
+@media (max-width: 900px) {
+    .container {
+        width: 40rem;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
 
+    .container h1 {
+        font-size: 24px;
+    }
 
+    .container input {
+        width: 70%;
+    }
+
+    .container button {
+        width: 85%;
+    }
+
+    #st-image {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .container form{
+        width: 50%
+}
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 740px) {
+    .container {
+        width: 80vw;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .container .form-container {
+        width: 60%;
+    }
+
+    .container input {
+        width: 80%;
+    }
+
+    .container button {
+        width: 95%;
+    }
+
+    #st-image {
+        display: none;
+    }
+
+    .container form{
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .container input {
+        width: 100%;
+    }
+
+    .container button {
+        width: 115%;
+    }
+}
 

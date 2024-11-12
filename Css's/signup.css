@@ -181,20 +181,16 @@ body{
         padding: 20px;
         flex-direction: column;
     }
-
-    .container h1 {
-    }
-
     .container .form-container {
         width: 60%;
     }
 
     .container input {
-        width: 90%;
+        width: 80%;
     }
 
     .container button {
-        width: 105%;
+        width: 95%;
     }
 
     #st-image {
@@ -204,17 +200,9 @@ body{
     .container form{
         width: 100%;
     }
-
-    .social-icons a {
-    }
 }
 
 @media (max-width: 480px) {
-    .container {
-    }
-
-    .container h1 {
-    }
 
     .container input {
         width: 100%;
