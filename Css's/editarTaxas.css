@@ -1,56 +1,87 @@
-body{
+*{
     background-color: #09469b;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    color: black;
 }
 
-.container {
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.container1 {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #09469b;
+    background-color: white;
     position: sticky;
     top: 0px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container{
+    background-color: white;
+}
+
+.container1 nav{
+    background-color: white;
 }
 
 .stContainer
 {
-    width: 5%;
-    position: absolute;
-    top: 15px; 
-    left: 20px;
-    
+    height: 6vh;
+    width: 3vw;
+    margin-left: 15px;   
 }
 
-nav ul {
+.container1 ul {
+    display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
-nav ul li {
+.container1 ul li {
     display: inline;
     margin-left: 100px;
+    margin-top: 2%;
 }
 
-nav ul li a {
+.container1 ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+.container1 ul li a:hover {
     text-decoration: underline;
+    cursor: pointer; 
 }
+
+#align-all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container1 button{
+    background-color: white;
+    border-color: white;
+}
+
+.container1 svg{
+    background:transparent;
+    padding: 0;
+    margin: 0;
+}
+
 
 
 .justify{
     display: flex;
-    flex-wrap: wrap; /* Permite que os produtos se ajustem em várias linhas */
+    flex-wrap: wrap; 
     justify-content: center;
-    align-items: flex-start; /* Alinha os itens ao topo */
-    padding: 20px; /* Adiciona padding para os produtos */
+    align-items: flex-start; 
+    padding: 20px; 
  }
  
  .align{
@@ -68,28 +99,43 @@ nav ul li a:hover {
     padding: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s; 
+    height: 70vh;
 }
 
 #produto1 h1, #produto2 h1, #produto3 h1 {
     text-align: center;
-    margin-bottom: 10%;
+    background-color: white;
+    color: #09469b;
+    font-size: 30px;
+    margin-top: 2%;
 }
 
+.justify input{
+    margin-bottom: 6%;
+}
+
+#produto1 form{
+    background-color: white;
+}
+
+p.subtitle {
+    background-color: white;
+}
 
 .btn-editar {
     background-color: #09469b;
     color: #fff;
-    font-size: 16px; /* Ajusta o tamanho da fonte */
-    padding: 10px 20px; /* Ajusta o padding do botão */
-    border: none; /* Remove a borda padrão */
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none;
     border-radius: 15px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
-    width: 100%; /* Botão ocupa toda a largura */
-    transition: background-color 0.3s ease; /* Efeito de transição suave */
+    width: 100%; 
+    transition: background-color 0.3s ease; 
 }
 
 .btn-editar:hover {
@@ -105,21 +151,37 @@ nav ul li a:hover {
  }
  .subtitle{
      color: #000000;
-     margin-bottom: 2%;
+     margin-bottom: 1%;
  }
 
- h1{
-    color: #09469b;
- }
+ .bi{
+    color: #f0f0f0;
+}
+
+.offcanvas-body a{
+    text-decoration: none;
+    color: white
+}
+
+.offcanvas-header h5{
+    color: white
+}
+
+a{
+    width: 100%;
+}
  
  p{
      font-size: 120%;
      color: #fff;
  }
+
+
  
  @media (max-width: 768px) {
      .container {
-         flex-direction: column;
+        display: flex; 
+        flex-direction: row;
          padding-bottom: 20px;
      }
  
@@ -145,6 +207,7 @@ nav ul li a:hover {
          width: 90%;
          margin-left: 5%;
          margin-top: 5%;
+         background-color: white;
      }
  
      .justify {
@@ -189,10 +252,12 @@ nav ul li a:hover {
     padding: 0 20px;
     font-size: 18px;
     border-radius: 8px;
-    width: 85%;
+    width: 100%;
     outline: none;
     border: 2px solid transparent;
     transition: all 0.4s ease;
+    
+    
 }
 
 input:hover {

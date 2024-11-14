@@ -146,6 +146,21 @@ background-color: #fff;
 appearance: none;
 }
 
+#select-option label {
+    background-color: #f0f0f0;
+    color: black;
+  }
+  
+  #select-option option {
+    background-color: #f0f0f0;
+    color: black    ;
+  }
+  
+  #select-option option:hover {
+    background-color: #09469b;
+    color: #f0f0f0;
+  }
+
 input{
     background-color: #eee;
     margin: 8px 0;
@@ -158,7 +173,7 @@ font-size: 20px;
 
 #select-option:focus {
 border-color: #09469b; 
-background-color: #e0f7fa; 
+background-color: #f0f0f0;
 color: #09469b; 
 }
 
@@ -189,6 +204,7 @@ color: #09469b;
     cursor: pointer;
     width: 100%;
     text-decoration: none;
+    transition: background-color 0.3s ease; 
 }
 
 .btn-excluir:hover{

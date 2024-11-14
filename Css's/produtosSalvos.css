@@ -93,6 +93,7 @@ p{
     cursor: pointer;
     width: 13vw;
     text-decoration: none;
+    transition: background-color 0.3s ease; 
 }
 
 
