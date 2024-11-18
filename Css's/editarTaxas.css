@@ -91,6 +91,7 @@ body{
  }
  
  #produto1, #produto2, #produto3 {
+    height: fit-content !important;
     width: 25%; 
     margin: 35px;
     border: 2px solid #09469b;
@@ -99,7 +100,6 @@ body{
     padding: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s; 
-    height: 70vh;
 }
 
 #produto1 h1, #produto2 h1, #produto3 h1 {
@@ -219,7 +219,7 @@ a{
  
  @media (max-width: 480px) {
      .btn-salvar {
-         width: 100%;
+         width: 90%;
          font-size: 16px;
          padding: 8px 0;
      }
