@@ -14,25 +14,20 @@ buttomEntrar.addEventListener('click', (event) => {
 
     fetch('http://localhost:8080/auth/login', {
         method: 'POST',
+        credentials: 'include',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ usernameOrEmail: valueUsername, password: valuePassword }),
-        credentials: 'include'
+        body: JSON.stringify({ usernameOrEmail: valueUsername, password: valuePassword })
     })
     .then(response => {
         if (!response.ok) {
             throw new Error(`Erro HTTP! Status: ${response.status}`);
         }
-        return response.text(); // Usa .text() ao invés de .json()
+        return response.text();
     })
     .then(data => {
-        try {
-            const jsonData = JSON.parse(data); // Tenta converter em JSON
-            console.log('Resposta JSON:', jsonData);
-        } catch (error) {
-            console.log('Resposta não é JSON:', data); // Se não for JSON, apenas printa
-        }
+        console.log(data); 
     })
     .catch(error => {
         console.error('Erro ao enviar os dados:', error);
@@ -45,11 +40,11 @@ buttomTeste.addEventListener('click', (event) => {
 
     fetch('http://localhost:8080/produto', {
         method: 'GET',
+        credentials: 'include',
         headers: {
             'Content-Type': 'application/json',
             
-        },
-        credentials: 'include' // Inclui cookies na requisição
+        }
     })
     .then(response => response.json()) 
     .then(data => console.log(data))
