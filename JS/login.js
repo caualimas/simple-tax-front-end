@@ -1,7 +1,6 @@
 const buttomEntrar = document.getElementById("entrar");
 const username = document.getElementById("username");
 const password = document.getElementById("password");
-const buttomTeste = document.getElementById("teste");
 
 buttomEntrar.addEventListener('click', (event) => {
     event.preventDefault();  // Previne o envio padrão do formulário
@@ -23,8 +22,10 @@ buttomEntrar.addEventListener('click', (event) => {
     .then(response => {
         if (!response.ok) {
             throw new Error(`Erro HTTP! Status: ${response.status}`);
+        }else{
+            window.location.replace("../Html's/calcular.html");
+            return response.text();
         }
-        return response.text();
     })
     .then(data => {
         console.log(data); 
@@ -33,7 +34,7 @@ buttomEntrar.addEventListener('click', (event) => {
         console.error('Erro ao enviar os dados:', error);
     });
 });
-
+/*
 buttomTeste.addEventListener('click', (event) => {
     event.preventDefault();
 
@@ -46,8 +47,18 @@ buttomTeste.addEventListener('click', (event) => {
             
         }
     })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`Erro HTTP! Status: ${response.status}`);
+        }else{
+            window.location.replace("../Html's/calcular.html");
+            return response.text();
+        }
+    })
     .then(response => response.json()) 
     .then(data => console.log(data))
     .catch(error => console.error('Erro:', error));
     
+    
 })
+    */
