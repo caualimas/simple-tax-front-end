@@ -3,13 +3,11 @@ const username = document.getElementById("username");
 const password = document.getElementById("password");
 
 buttomEntrar.addEventListener('click', (event) => {
-    event.preventDefault();  // Previne o envio padrão do formulário
+    event.preventDefault();  // nao envia o formulario
 
     const valueUsername = username.value;
     const valuePassword = password.value;
 
-    console.log(valueUsername);
-    console.log(valuePassword);
 
     fetch('http://localhost:8080/auth/login', {
         method: 'POST',
@@ -34,31 +32,3 @@ buttomEntrar.addEventListener('click', (event) => {
         console.error('Erro ao enviar os dados:', error);
     });
 });
-/*
-buttomTeste.addEventListener('click', (event) => {
-    event.preventDefault();
-
-
-    fetch('http://localhost:8080/produto', {
-        method: 'GET',
-        credentials: 'include',
-        headers: {
-            'Content-Type': 'application/json',
-            
-        }
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`Erro HTTP! Status: ${response.status}`);
-        }else{
-            window.location.replace("../Html's/calcular.html");
-            return response.text();
-        }
-    })
-    .then(response => response.json()) 
-    .then(data => console.log(data))
-    .catch(error => console.error('Erro:', error));
-    
-    
-})
-    */
