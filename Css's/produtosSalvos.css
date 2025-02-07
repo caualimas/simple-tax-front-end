@@ -89,10 +89,9 @@ p{
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin: 10px;
     cursor: pointer;
     width: 13vw;
-    text-decoration: none;
     transition: background-color 0.3s ease; 
 }
 
@@ -120,6 +119,7 @@ p{
     width: 101%;
     transition: all 0.4s ease;
 }
+
 
 #this-page{
     font-size: 130%;
@@ -234,5 +234,7 @@ p{
             font-size: 16px;
         }
     
-        
+        #this-page{
+            width: 80%;
+        }
     }
