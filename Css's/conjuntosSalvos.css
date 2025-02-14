@@ -7,56 +7,53 @@ body{
     margin: 0;
 }
 
-.container{
+.logo{
     background-color: white;
 }
 
-.container1 {
+#tableTaxas{
+    overflow-x: auto;
+}
+
+.container {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: white;
     position: sticky;
     top: 0px;
 }
 
-.container1 nav{
+.container nav{
     background-color: white;
 }
 
-.align h1 {
+.conjuntoTaxas h1 {
     margin-top: 2%;;
     color: white;
 }
 
-.container1 {
-    justify-content: space-between; 
-}
 
-.container1 .btn {
+.container .btn {
     margin-left: auto; 
 }
 
-.container1 button{
+.container button{
     background-color: white;
     border-color: white;
 }
 
-.container1 svg{
+.container svg{
     background:transparent;
     padding: 0;
     margin: 0;
 
 }
 
-
 p{
     color: #ffffff;
 }
 
-.stContainer
-{
+.stContainer{
    width: 3%;
    position: absolute;
    top: 15px; 
@@ -84,7 +81,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.align{
+.conjuntoTaxas{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,8 +113,6 @@ nav ul li a:hover {
     background-color: #09469b;
     box-shadow: 0 8px 16px rgba(9, 70, 155, 0.5); 
 }
-
-
 
 .conjunto-btn{
     background-color: white;
@@ -182,7 +177,7 @@ nav ul li a:hover {
     #this-page {
         font-size: 1.2rem;
     }
-    .align{
+    .conjuntoTaxas{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -191,7 +186,7 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    .container {
+    .logo {
         flex-direction: column;
         padding-bottom: 20px;
     }
@@ -248,6 +243,4 @@ nav ul li a:hover {
     nav ul li a {
         font-size: 16px;
     }
-
-    
 }
