@@ -36,9 +36,6 @@ buttomCadastrar.addEventListener('click', (event) =>{
             return response.text();
         }
     })
-    .then(data => {
-        console.log(data); 
-    })
     .catch(error => {
         console.error('Erro ao enviar os dados:', error);
     });
