@@ -56,25 +56,20 @@
 
             <form action="afterClickCalcular.html" method="get">
                 <div id="select-produto">
-                    <label for="produto">Escolha um produto:</label>
-                
-                    <select name="produto-1" multiple id="select-option" required>
-                        <option value="produto-1">Produto 1</option>
-                        <option value="produto-2">Produto 2</option>
-                        <option value="produto-3">Produto 3</option>
+                    <label for="select-option">Selecione um produto:</label>
+                    <select name="produto-1" id="select-option" required>
+                         
                     </select>
                 </div>
             <br>
 
-            <label for="conjunto-tax" id="conjunto-tax">Escolha um(s) conjunto(s) de taxa(s):</label> <br><br>
+            <label for="conjunto-tax" >Escolha um(s) conjunto(s) de taxa(s):</label> <br><br>
 
-            <div class="conjunto-group">
-                <label><input type="checkbox" name="conjunto" id="conjunto1" class="checkbox"> Conjunto de taxas 1</label>
-                <label><input type="checkbox" name="conjunto" id="conjunto2" class="checkbox"> Conjunto de taxas 2</label>
-                <label><input type="checkbox" name="conjunto" id="conjunto3" class="checkbox"> Conjunto de taxas 3</label><br>
+            <div class="conjunto-group" id="conjunto-tax">
+                
             </div>
-
-            <input type="submit" name="calcular" id="calcular" value="Calcular" class="btn-salvar">
+            <br>
+            <input type="submit" name="calcular" id="buttonCalcular" value="Calcular" class="btn-salvar">
 
             <br><br>
            
@@ -84,7 +79,7 @@
         </div>
 
     </div>
-
+    <script src="../JS/GetOptions.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
