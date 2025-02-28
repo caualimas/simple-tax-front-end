@@ -41,18 +41,18 @@
     <div class="profile-container">
         <div class="profile-header">
             <i class="fa-solid fa-user"></i>
-            <h1>Nome do Usuário</h1>
-            <p class="user-email">email@exemplo.com</p>
+            <h1 id="h1Nome"></h1>
+            <p class="user-email" id="email">email@exemplo.com</p>
         </div>
         <div class="profile-content">
             <div class="profile-info">
                 <h2>Informações do Usuário</h2>
-                <p><strong>Nome:</strong> Nome</p>
-                <p><strong>Username:</strong> Username</p>
-                <p><strong>Email:</strong> email@exemplo.com</p>
-                <p><strong>Status da Conta:</strong> Ativa</p>
-                <p><strong>Último Login:</strong> 16/10/2024</p>
-                <p><strong>Plano de Assinatura:</strong> Premium</p>
+                <p><strong>Nome:</strong></p> <p id="userNome"></p>
+                <p><strong>CPF / CNPJ:</strong></p> <p id="userCpf"></p>
+                <p><strong>Username:</strong></p> <p id="userUsername"></p>
+                <p><strong>Email:</strong></p> <p id="userEmail"></p>
+                <p><strong>Plano de Assinatura:</strong></p> <p id="userPremium"></p>
+                <p><strong>Status da Conta:</strong></p> <p id="userStatus"></p>
             </div>
             <div class="profile-actions">
                 <button class="edit-button">Editar Perfil</button>
@@ -60,7 +60,7 @@
             </div>
         </div>
     </div>
-
+    <script src="../JS/GETperfil.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
