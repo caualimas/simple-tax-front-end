@@ -50,7 +50,7 @@ buttonSalvarTaxas.addEventListener('click', (event) =>{
         if (!response.ok) {
             throw new Error(`Erro HTTP! Status: ${response.status}`);
         }else{
-            window.location.replace("../Html's/conjuntosSalvos.html");
+            window.location.replace("../../pages/taxas/conjuntosSalvos.html");
             return response.text();
         }
     })

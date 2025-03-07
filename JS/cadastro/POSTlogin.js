@@ -21,7 +21,7 @@ buttomEntrar.addEventListener('click', (event) => {
         if (!response.ok) {
             throw new Error(`Erro HTTP! Status: ${response.status}`);
         }else{
-            window.location.replace("../Html's/calcular.html");
+            window.location.replace("../../pages/calculo/calcular.html");
             return response.text();
         }
     })
